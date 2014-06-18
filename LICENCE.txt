@@ -1,0 +1,3 @@
+This simulator is derived from Paul Falstad's electronic simulator (http://www.falstad.com/circuit/)
+
+This project inherits the original licence, http://www.falstad.com/licensing.html

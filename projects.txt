@@ -1,0 +1,1 @@
+10SCI: {name: 10SCI, url: 'https://docs.google.com/uc?export=download&id=0B0RLPZ05lTIILTY5QnMzckxvWEk'}

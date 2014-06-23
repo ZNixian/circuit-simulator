@@ -4,10 +4,11 @@
  */
 package simulator.ui.componentsMenu;
 
-import com.sun.istack.internal.logging.Logger;
 import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.Panel;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.BoxLayout;
 import javax.swing.ButtonGroup;
 import javax.swing.JComponent;
@@ -106,7 +107,7 @@ public class SidebarComponentPlacer implements ComponentPlacer {
             but.setActionCommand(className);
             buttons.add(but);
         } catch (Exception ex) {
-            Logger.getLogger(getClass()).warning("Exception loading class:", ex);
+            Logger.getLogger(getClass().getName()).log(Level.WARNING, "Exception loading class:", ex);
         }
         return but;
     }
@@ -188,7 +189,7 @@ public class SidebarComponentPlacer implements ComponentPlacer {
             classCheckItem.setActionCommand(name);
             buttons.add(classCheckItem);
         } catch (Exception ex) {
-            Logger.getLogger(getClass()).warning("Exception loading class:", ex);
+            Logger.getLogger(getClass().getName()).log(Level.WARNING, "Exception loading class:", ex);
         }
         addItem(title, name, defaultType, false, classCheckItem);
     }

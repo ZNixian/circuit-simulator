@@ -1,8 +1,7 @@
 package simulator;
 
 // CirSim.java (c) 2010 by Paul Falstad, Modified/Extended by Campbell Suter
-// For information about the theory behind this, see Electronic Circuit & System Simulation Methods by Pillage
-import com.sun.istack.internal.logging.Logger;
+// For information about the theory behind this, see Electronic Circuit & System Simulation Methods by Pillages
 import simulator.components.CurrentElm;
 import java.awt.*;
 import java.util.Vector;
@@ -15,6 +14,8 @@ import java.io.ByteArrayOutputStream;
 import java.util.StringTokenizer;
 import java.lang.reflect.Constructor;
 import java.net.URLEncoder;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JCheckBoxMenuItem;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
@@ -151,7 +152,7 @@ public class CirSim extends JFrame
             UIManager.setLookAndFeel(
                     UIManager.getSystemLookAndFeelClassName());
         } catch (UnsupportedLookAndFeelException | ClassNotFoundException | InstantiationException | IllegalAccessException ex) {
-            Logger.getLogger(getClass()).warning("Error setting Look&Feel:", ex);
+            Logger.getLogger(getClass().getName()).log(Level.WARNING, "Error setting Look&Feel:", ex);
         }
     }
     public String startCircuit = null;

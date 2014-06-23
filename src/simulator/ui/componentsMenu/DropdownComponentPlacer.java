@@ -39,7 +39,9 @@ public class DropdownComponentPlacer implements ComponentPlacer {
     public DropdownComponentPlacer(JPopupMenu rootMenu, JMenu simpleMenu, JMenu passMenu, JMenu ioMenu, JMenu activeMenu, JMenu logicMenu, JMenu chipsMenu, JMenu otherMenu, CirSim cs, boolean simpleMode) {
         this.rootMenu = rootMenu;
         this.simpleMenu = simpleMenu;
-        rootMenu.add(simpleMenu);
+        if (simpleMenu != null) {
+            rootMenu.add(simpleMenu);
+        }
         this.passMenu = passMenu;
         rootMenu.add(passMenu);
         this.ioMenu = ioMenu;

@@ -1,6 +1,5 @@
 package simulator;
 
-import com.sun.org.apache.bcel.internal.generic.FCMPG;
 import java.awt.*;
 import java.io.*;
 import java.nio.ByteBuffer;

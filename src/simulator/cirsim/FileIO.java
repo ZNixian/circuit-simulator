@@ -4,11 +4,11 @@
  */
 package simulator.cirsim;
 
-import com.sun.istack.internal.logging.Logger;
 import java.io.File;
 import java.lang.reflect.Constructor;
 import java.util.StringTokenizer;
 import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import simulator.CirSim;
 import static simulator.CirSim.expDialog;
@@ -178,7 +178,7 @@ public class FileIO {
             FileIO.readSetupAndPrompt(cirsim, dump.getBytes(), dump.length(), false);
             cirsim.mdc.loaded = new File(fi);
         } catch (Exception ex) {
-            Logger.getLogger(FileIO.class).log(Level.SEVERE, "Exception: " + ex.toString());
+            Logger.getLogger(FileIO.class.getName()).log(Level.SEVERE, "Exception: {0}", ex.toString());
         }
     }
 }

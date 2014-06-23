@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>dist\Electronics_Simulator.jar</jar>
+  <outfile>binary\Electronics Simulator.exe</outfile>
+  <errTitle>Electronics Simulator</errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <manifest></manifest>
+  <icon>C:\Users\Campbell Suter\Documents\jmonkey\projects\Electronics Simulator\res\icon.ico</icon>
+  <singleInstance>
+    <mutexName>simulator.CircuitLauncher</mutexName>
+    <windowTitle>Electronics Simulator</windowTitle>
+  </singleInstance>
+  <classPath>
+    <mainClass>simulator.CircuitLauncher</mainClass>
+    <cp>./snakeyaml-1.13.jar</cp>
+    <cp>./Electronics_Simulator.jar</cp>
+  </classPath>
+  <jre>
+    <path></path>
+    <bundledJre64Bit>false</bundledJre64Bit>
+    <minVersion>1.5.0</minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <runtimeBits>64/32</runtimeBits>
+    <opt> -Xnoagent</opt>
+  </jre>
+</launch4jConfig>
